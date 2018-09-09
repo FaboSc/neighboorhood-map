@@ -1,0 +1,72 @@
+html {
+    height :100%
+}
+
+body {
+    margin: 0 0 0 0;
+    height :100%
+}
+
+nav {
+    min-width: 200px;
+    background-color: black;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+section {
+}
+
+h2 {
+    padding: 10px 10px 10px 10px;
+    margin: 0 0 0 0;
+    color: white;
+}
+
+input {
+    width: 100%;
+    border: none;
+}
+
+.hamburger-button {
+    margin-left: 0.5%;
+    cursor: pointer;
+}
+
+.outer-container {
+    height: 100%;
+    display: inline-flex;
+    min-width: 100%;
+}
+
+.nav-headline {
+    display: flex;
+    align-content: center;
+    min-height: 50px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-top: -4px;
+    min-width: 100%;
+    background-color: grey;
+
+}
+
+.bar1, .bar2, .bar3 {
+    width: 20px;
+    height: 3px;
+    background-color: deepskyblue;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.map {
+    height: 95%
+}

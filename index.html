@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landshut & Munich</title>
+
+    <link rel="stylesheet" type="text/css" href="static/css/main.css" />
+</head>
+<body>
+
+<div class="outer-container">
+
+    <nav data-bind="visible: navVisible">
+        <div class="nav-headline">
+            <h2>Landshut</h2>
+        </div>
+        <input type="text" placeholder="Filter locations">
+        <ul class="" data-bind="foreach: filteredLocations">
+            <li style="color: white;" data-bind="text: title"></li>
+        </ul>
+
+    </nav>
+
+    <!-- Inner container -->
+    <main>
+        <div class="header">
+            <div class="hamburger-button"
+                 data-bind="click:toggleNav"
+                 title="Show navigation">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <section id="map" class="map">
+            Ich bin die Map
+        </section>
+    </main>
+</div>
+
+
+
+
+<script src="javascript/lib/knockout-3.4.2.js"></script>
+<script src="javascript/app.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDM7dW1ZNugMd_hNOYKXff15bIE8VRb7aU&callback=initMap">
+</script>
+</body>
+</html>
