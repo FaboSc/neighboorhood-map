@@ -11,8 +11,11 @@ function DataModel() {
         disableDefaultUI: true
     });
 
+    this.wikiData =
+
     this.locationMarkers = [new google.maps.Marker({
         id: 1,
+        wiki_id: 3772076,
         position: { lat: 48.5318984, lng: 12.1458682 },
         title: 'Burg Trausnitz, Landshut'
     }),
@@ -38,8 +41,38 @@ function DataModel() {
         })];
 
     self.locationMarkers.forEach(function (marker) {
-        marker.setMap(map)
-    })
+
+        var infowindow = new google.maps.InfoWindow ({
+            content: "hello"
+        });
+
+        marker.setMap(map);
+        marker.addListener('click', function() {
+            infowindow.open(map, marker)
+        });
+    });
+
+    //https://en.wikipedia.org/w/api.php?action=query&pageids=3772076&prop=extracts&format=json
+
+    $.ajax({
+        url: 'http://en.wikipedia.org/w/api.php',
+        data: {
+            action:'query',
+            pageids: 3772076,
+            prop:"extracts",
+            exintro: true,
+            format:'json'
+        },
+        dataType:'jsonp',
+        success: function(data) {
+            console.log(data.query.pages[3772076].extract);
+
+        }
+    });
+
+
+
+
 
 }
 
