@@ -70,3 +70,7 @@ input {
 .map {
     height: 95%
 }
+
+.list-item {
+    cursor: pointer;
+}
