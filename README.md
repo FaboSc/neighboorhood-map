@@ -1,9 +1,8 @@
-# neighboorhood-map
+# Neighboorhood-map
 Shows some interesting places to visit in Landshut and Munich(the next bigger city).
 
 ## Run
-Open the index.html file. This websites loads information from the web, so internet connection is required.
-
+Clone this repository and open the index.html file
 ## Credits
 * Most of code is from the udacity courses.
 * Wikipedia Api: [https://www.mediawiki.org/wiki/API:Main_page/en](https://www.mediawiki.org/wiki/API:Main_page/en)
