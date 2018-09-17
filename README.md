@@ -6,5 +6,6 @@ Open the index.html file. This websites loads information from the web, so inter
 
 ## Credits
 * Most of code is from the udacity courses.
+* Wikipedia Api: [https://www.mediawiki.org/wiki/API:Main_page/en](https://www.mediawiki.org/wiki/API:Main_page/en)
 * The Hamburger item is: from [https://www.w3schools.com/howto/howto_css_menu_icon.asp](https://www.w3schools.com/howto/howto_css_menu_icon.asp)
 * Changing the google.infowindow styles : [https://stackoverflow.com/questions/3844314/controlling-the-width-of-a-google-maps-infowindow](https://stackoverflow.com/questions/3844314/controlling-the-width-of-a-google-maps-infowindow)
